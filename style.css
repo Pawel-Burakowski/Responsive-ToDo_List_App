@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* 
+{
+	font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: -12px 14px 33px -8px rgba(55, 59, 152, 1);
+    -moz-box-shadow: -12px 14px 33px -8px rgba(55, 59, 152, 1);
+    box-shadow: -12px 14px 33px -8px rgba(55, 59, 152, 1);
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.input-field
+{
+    position: relative;
+    height: 64px;
+    width: 100%;
+}
+
+textarea
+{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(192, 245, 245);
+    border-radius: 10px;
+    outline: none;
+    padding: 18px 45px 45px 18px;
+    font-size: 1em;
+    font-weight: 400;
+    resize: none
+}
+
+textarea::-webkit-scrollbar
+{
+    display: none;
+}
+
+.input-field .note-icon
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    pointer-events: none;
+    color: rgba(55, 59, 152, 1);
+}
+
+.toDoLists
+{
+    margin-top: 25px;
+}
+
+.toDoLists .list
+{
+    list-style: none;
+    font-size: 1em;
+    cursor: pointer;
+    /* align-items: center; */
+    margin-left: -40px;
+    margin-top: 10px;
+    display: flex;
+    background-color: rgba(192, 245, 245, 0.479);
+    padding: 20px 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.toDoLists .list .task
+{
+    margin: 0 30px 0 15px;
+    word-break: break-all;
+}
+
+.list input:checked ~ .task
+{
+    text-decoration: line-through;
+}
+
+.toDoLists .list .uil-trash-alt
+{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: rgba(55, 59, 152);
+    opacity: 0.75;
+/*     display: none; */
+}
+
+.toDoLists .list input
+{
+/*     pointer-events: none; */
+    width: 15px;
+    height: 15px;
+    accent-color: rgba(55, 59, 152, 1);
+}
+
+.toDoLists .list .uil-trash-alt:hover
+{
+    opacity: 1;
+}
+
+.pending-task
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pending-task .clear-button
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(192, 245, 245, 0.479);
+    cursor: pointer;
+}
