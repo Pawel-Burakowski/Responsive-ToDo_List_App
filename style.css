@@ -60,6 +60,9 @@ textarea::-webkit-scrollbar
 .toDoLists
 {
     margin-top: 25px;
+    max-height: 360px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .toDoLists .list
@@ -102,7 +105,7 @@ textarea::-webkit-scrollbar
 
 .toDoLists .list input
 {
-/*     pointer-events: none; */
+    pointer-events: none;
     width: 15px;
     height: 15px;
     accent-color: rgba(55, 59, 152, 1);
@@ -129,4 +132,13 @@ textarea::-webkit-scrollbar
     border: none;
     background-color: rgba(192, 245, 245, 0.479);
     cursor: pointer;
+    white-space: nowrap;
 }
+
+@media screen and (max-width: 350px)
+{
+    .container {
+        padding: 25px 10px;
+    }
+}
+    
